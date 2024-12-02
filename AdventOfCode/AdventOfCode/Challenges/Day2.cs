@@ -56,21 +56,27 @@ namespace AdventOfCode.Services
                 else if(subArrays && IsSubArrayValid(line)) 
                     validLines++;
             
-            // Console.WriteLine("Valid lines: " + validLines);
+            Console.WriteLine("Valid lines: " + validLines);
         }
 
         public int[] GetSubArray(int [] original, int removeIndex){
             List<int> list = new List<int>(original);
             list.RemoveAt(removeIndex);
-            return list.ToArray();
+
+            var validSubArray = list.ToArray();
+            Console.WriteLine($"Original Array: [{string.Join(", ", original)}] Valid Sub Array: [{string.Join(", ", validSubArray)}] Removed Value: {original[removeIndex]} at Index {removeIndex}");
+            return validSubArray;
         }
 
         public bool IsSubArrayValid(int[] original) {            
-            for(int i = 0; i < original.Length - 1; i++){
+            for(int i = 0; i <= original.Length - 1; i++){
                 var subArray = GetSubArray(original, i);
-                if(IsLineDifferencesValid(subArray) && IsLineOrdered(subArray))
+                if(IsLineDifferencesValid(subArray) && IsLineOrdered(subArray)){
+                    Console.WriteLine("Valid");
                     return true;
+                }
             }
+                Console.WriteLine("");
             return false;
         }
     }
