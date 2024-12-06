@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "AdventOfCode": {
+      "commandName": "Project",
+      "workingDirectory": "C:\\Users\\migue\\Documents\\Projects\\AdventOfCode\\AdventOfCode\\AdventOfCode"
+    }
+  }
+}
