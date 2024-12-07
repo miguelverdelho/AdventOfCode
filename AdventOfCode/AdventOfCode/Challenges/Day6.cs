@@ -11,7 +11,7 @@ namespace AdventOfCode.Services
         static string projectRootPath = Directory.GetCurrentDirectory();
         static string _inputFilePath = Path.Combine(projectRootPath, "Inputs/day6", "day6.txt");
 
-        static char [,] originalMap;
+        static char [,]? originalMap;
 
         const char GUARD_MOVING_UP ='^';
         const char GUARD_MOVING_DOWN ='V';
@@ -221,7 +221,7 @@ namespace AdventOfCode.Services
             var guardPassingPositions = new List<Tuple<int, int>>();
             for(int i = 0; i < currentMap.GetLength(0); i++){
                 for(int j = 0; j < currentMap.GetLength(1); j++){
-                    if(currentMap[i, j] == 'X' && originalMap[i, j] != '^'){
+                    if(currentMap[i, j] == 'X' && originalMap![i, j] != '^'){
                         guardPassingPositions.Add(new Tuple<int, int>(i, j));
                     }
                 }
@@ -232,7 +232,7 @@ namespace AdventOfCode.Services
 
         public bool IsRunWithObstacleLooped(Tuple<int, int> guardPassingPosition, Tuple<int, int> currentPosition){
             
-            char[,] tempMap = (char[,])originalMap.Clone();
+            char[,] tempMap = (char[,])originalMap!.Clone();
             // tempMap[guardPassingPosition.Item1, guardPassingPosition.Item2] = '0';
             // PrintReadMap(tempMap);
             tempMap[guardPassingPosition.Item1, guardPassingPosition.Item2] = '#';
