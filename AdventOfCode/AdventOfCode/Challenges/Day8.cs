@@ -114,14 +114,14 @@ namespace AdventOfCode.Services
 
             Console.WriteLine($"Part 2: {AntiNodes.Count} antinodes");
 
-            PrintReadMap(Map);
+            PrintReadMap(Map!);
         }
 
         public bool IsInMap(Tuple<int, int> position){
             return position.Item1 >= 0
             && position.Item2 >= 0
-            && position.Item1 < Map.GetLength(0)
-            && position.Item2 < Map.GetLength(1);
+            && position.Item1 < Map!.GetLength(0)
+            && position.Item2 < Map!.GetLength(1);
         }
     }
 }
