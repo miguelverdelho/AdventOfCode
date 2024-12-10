@@ -32,6 +32,10 @@
 // day8.RunPart1();
 // day8.RunPart2();
 
-Day9 day9 = new();
-day9.RunPart1();
-day9.RunPart2();
+// Day9 day9 = new();
+// day9.RunPart1();
+// day9.RunPart2();
+
+Day10 day10 = new();
+day10.RunPart1();
+day10.RunPart2();
