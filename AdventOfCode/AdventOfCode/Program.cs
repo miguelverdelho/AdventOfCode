@@ -40,6 +40,10 @@
 // day10.RunPart1();
 // day10.RunPart2();
 
-Day11 day11 = new();
-day11.RunPart1();
-day11.RunPart2();
+// Day11 day11 = new();
+// day11.RunPart1();
+// day11.RunPart2();
+
+Day12 day12 = new();
+day12.RunPart1();
+day12.RunPart2();
