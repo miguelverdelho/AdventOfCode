@@ -260,6 +260,7 @@ namespace AdventOfCode.Services
             }
             return false;
         }
+        
         private bool IsThereAdjacentTopSidesToLeft(int x, int y)
         {
             if (InBounds(x - 1, y) && Map[x, y] == Map[x - 1, y])
@@ -307,6 +308,7 @@ namespace AdventOfCode.Services
             }
             return false;
         }
+
         private bool IsThereAdjacentLeftSidesDown(int x, int y)
         {
             if (InBounds(x, y + 1) && Map[x, y] == Map[x, y + 1])
