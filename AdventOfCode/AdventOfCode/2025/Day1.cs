@@ -7,8 +7,7 @@ public class Day1
     public void RunPart1()
     {
         //read lines from file
-        string[] lines = File.ReadAllLines(@"C:\Users\migue\source\repos\miguelverdelho\AdventOfCode\AdventOfCode\AdventOfCode\2025\inputs\day1_test.txt");
-
+        string[] lines = File.ReadAllLines(@"C:\Users\migue\source\repos\miguelverdelho\AdventOfCode\AdventOfCode\AdventOfCode\2025\inputs\day1_test.txt"); 
         int x = 50;
         int result = 0;
 
@@ -92,8 +91,3 @@ public class Day1
         Console.WriteLine(result);
     }
 }
-
-//tried
-
-//6351 
-//6437

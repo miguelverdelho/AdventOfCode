@@ -1,5 +1,3 @@
-﻿using AdventOfCode.Services;
-
-AdventOfCode._2025.Day1 day1 = new();
-//day1.RunPart1();
-day1.RunPart2();
+﻿AdventOfCode._2025.Day1 today = new();
+today.RunPart1();
+today.RunPart2();
