@@ -3,11 +3,11 @@
 public class Day1
 {
     static string projectRootPath = Directory.GetCurrentDirectory();
-    static string _inputFilePath = Path.Combine(projectRootPath, "2025","inputs", "day1_sample.txt");
+    static string _inputFilePath = Path.Combine(projectRootPath, "2025","inputs", "day1.txt");
     public void RunPart1()
     {
         //read lines from file
-        string[] lines = File.ReadAllLines(@"C:\Users\migue\source\repos\miguelverdelho\AdventOfCode\AdventOfCode\AdventOfCode\2025\inputs\day1_test.txt"); 
+        string[] lines = File.ReadAllLines(_inputFilePath); 
         int x = 50;
         int result = 0;
 
@@ -40,7 +40,7 @@ public class Day1
     {
 
         //read lines from file
-        string[] lines = File.ReadAllLines(@"C:\Users\migue\source\repos\miguelverdelho\AdventOfCode\AdventOfCode\AdventOfCode\2025\inputs\day1.txt");
+        string[] lines = File.ReadAllLines(_inputFilePath);
 
         int x = 50;
         int prevX = 0;
@@ -84,7 +84,7 @@ public class Day1
             {
                 result++;
             }
-            Console.WriteLine(i +": " +prevX +""+ line.Replace('R', '+').Replace('L','-') + "=" + x + "=>" + result);
+            //Console.WriteLine(i +": " +prevX +""+ line.Replace('R', '+').Replace('L','-') + "=" + x + "=>" + result);
 
         }
 
