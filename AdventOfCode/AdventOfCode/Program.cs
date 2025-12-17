@@ -1,3 +1,3 @@
-﻿AdventOfCode._2025.Day7 today = new();
+﻿AdventOfCode._2025.Day8 today = new();
 today.RunPart1();
 today.RunPart2();
